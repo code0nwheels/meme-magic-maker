@@ -9,7 +9,7 @@
   },
   "condition" : {
     "urlFilter" : "*.m3u8^",
-	"initiatorDomains" : ["memesyndicate.com"]
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"]
   }
 },
 {
@@ -22,7 +22,7 @@
   },
   "condition" : {
     "urlFilter" : "*.ts^",
-	"initiatorDomains" : ["memesyndicate.com"]
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"]
   }
 },
 {
@@ -35,7 +35,7 @@
   },
   "condition" : {
     "urlFilter" : "*.mpd^",
-	"initiatorDomains" : ["memesyndicate.com"]
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"]
   }
 },
 {
@@ -48,7 +48,7 @@
   },
   "condition" : {
     "urlFilter" : "*.m4i^",
-	"initiatorDomains" : ["memesyndicate.com"]
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"]
   }
 },
 {
@@ -61,7 +61,7 @@
   },
   "condition" : {
     "urlFilter" : "*.m4a^",
-	"initiatorDomains" : ["memesyndicate.com"]
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"]
   }
 },
 {
@@ -74,7 +74,7 @@
   },
   "condition" : {
     "urlFilter" : "*.m4s^",
-	"initiatorDomains" : ["memesyndicate.com"]
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"]
   }
 },
 {
@@ -87,7 +87,7 @@
   },
   "condition" : {
     "urlFilter" : "*.m4v^",
-	"initiatorDomains" : ["memesyndicate.com"]
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"]
   }
 },
 {
@@ -100,7 +100,7 @@
   },
   "condition" : {
     "urlFilter" : "*.mp4^",
-	"initiatorDomains" : ["memesyndicate.com"]
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"]
   }
 },
 {
@@ -113,7 +113,7 @@
   },
   "condition" : {
     "urlFilter" : "*.aac^",
-	"initiatorDomains" : ["memesyndicate.com"]
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"]
   }
 },
 {
@@ -126,7 +126,7 @@
   },
   "condition" : {
     "urlFilter" : "*manifest(*",
-	"initiatorDomains" : ["memesyndicate.com"]
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"]
   }
 },
 {
@@ -139,7 +139,7 @@
   },
   "condition" : {
     "urlFilter" : "*fragments(*",
-	"initiatorDomains" : ["memesyndicate.com"]
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"]
   }
 },
 {
@@ -152,7 +152,7 @@
   },
   "condition" : {
     "urlFilter" : "*keydelivery*",
-	"initiatorDomains" : ["memesyndicate.com"],
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"],
 	"requestMethods" : ["post"]
   }
 },
@@ -166,7 +166,7 @@
   },
   "condition" : {
     "urlFilter" : "*keydelivery*",
-	"initiatorDomains" : ["memesyndicate.com"],
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"],
 	"requestMethods" : ["options"]
   }
 },
@@ -179,7 +179,7 @@
   },
   "condition" : {
     "regexFilter" : "^https://(.*[.]memesyndicate.com|memesyndicate.com)/",
-	"initiatorDomains" : ["memesyndicate.com"]
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"]
 	}
 },
 {
@@ -192,7 +192,7 @@
   },
   "condition" : {
     "urlFilter" : "*.vtt^",
-	"initiatorDomains" : ["memesyndicate.com"]
+	"initiatorDomains" : ["memesyndicate.com", "zipstreams.net"]
   }
 }
 ]

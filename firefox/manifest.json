@@ -5,7 +5,7 @@
 	 "scripts": ["scripts/service_worker.js"]
   },
   "content_scripts": [{
-     "matches": ["https://memesyndicate.com/*", "https://voo.memesyndicate.com/*", "http://memesyndicate.com/*", "http://voo.memesyndicate.com/*", "http://jawn.memesyndicate.com/*", "https://jawn.memesyndicate.com/*"],
+     "matches": ["https://memesyndicate.com/*", "https://voo.memesyndicate.com/*", "http://memesyndicate.com/*", "http://voo.memesyndicate.com/*", "http://jawn.memesyndicate.com/*", "https://jawn.memesyndicate.com/*", "https://*.zipstreams.net/*"],
      "js": ["scripts/content_script.js"]
   }],
   "action": {
@@ -47,7 +47,8 @@
 	 "*://*.neulion.com/",
 	 "*://*.azure.net/",
 	 "*://*.herokuapp.com/",
-	 "*://*.mux.com/"
+	 "*://*.mux.com/",
+  "*://*.zipstreams.net/"
   ],
   "web_accessible_resources": [
     {
@@ -55,5 +56,13 @@
       "matches": [ "https://*/*" ]
     }  
   ],
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{0a6a3438-2b63-41da-ae80-047b33b4f358}"
+    },
+    "gecko_android": {
+      "id": "{0a6a3438-2b63-41da-ae80-047b33b4f358}"
+    }
+  }
 }

@@ -1,0 +1,59 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "background": {
+    "service_worker": "scripts/service_worker.js"
+  },
+  "content_scripts": [{
+    "matches": ["https://memesyndicate.com/*", "https://voo.memesyndicate.com/*", "http://memesyndicate.com/*", "http://voo.memesyndicate.com/*", "http://jawn.memesyndicate.com/*", "https://jawn.memesyndicate.com/*", "https://*.zipstreams.net/*"],
+    "js": ["scripts/content_script.js"]
+  }],
+  "action": {
+    "default_icon": {
+      "19": "icon128_on.png",
+      "38": "icon128_on.png"
+    },
+    "default_title": "Meme Magic Maker v3"
+  },
+  "description": "where the magic happens(TM)",
+  "icons": {
+    "128": "icon128_on.png"
+  },
+  "manifest_version": 3,
+  "name": "Meme Magic Maker v3",
+  "permissions": [
+    "declarativeNetRequest",
+    "storage"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "meme_rules",
+      "enabled": true,
+      "path": "meme_rules.json"
+    }]
+  },
+  "host_permissions": [
+    "*://*.memesyndicate.com/",
+    "*://*.llnwi.net/",
+    "*://*.hulustream.com/",
+    "*://*.footprint.net/",
+    "*://*.espn.com/",
+    "*://*.uplynk.com/",
+    "*://*.akamaized.net/",
+    "*://*.mlb.com/",
+    "*://*.warnermediacdn.com/",
+    "*://*.endeavorstreaming.net/",
+    "*://*.movetv.com/",
+    "*://*.neulion.com/",
+    "*://*.azure.net/",
+    "*://*.herokuapp.com/",
+    "*://*.mux.com/",
+    "*://*.zipstreams.net/"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icon128_on.png", "scripts/indicator.js"],
+      "matches": ["https://*/*"]
+    }
+  ],
+  "version": "0.1.0"
+}
